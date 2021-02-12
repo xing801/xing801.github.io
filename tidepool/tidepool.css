@@ -1,0 +1,218 @@
+body {
+	background-color:slategray;
+}
+
+@font-face {
+  font-family:brandon;
+  src:url(brandon.otf)
+}
+
+h1 {
+	color:white;
+	font-family:'Lexend Mega', sans-serif;;
+	display: block;
+    font-size: 90px;
+    padding-left:50px;
+    text-align:center;
+}
+
+img {
+	background-repeat:no-repeat;
+  	background-size:cover;
+  	max-width:50%;
+  	margin:10px;
+}
+
+#box0 {
+	font-family:brandon;
+	border-radius: 50%;
+	border:1px solid whitesmoke;
+ 	color:#001a33;
+ 	font-size:23px;
+ 	padding: 25px;
+ 	margin: auto;
+  	width: 50%;
+  	height: 80px;
+  	text-align:center;
+  	overflow: scroll;
+  	transition: height 3s ease-in-out;
+}
+
+ol {
+    margin:auto;
+    width:50%;
+}
+
+ol p {
+	font-size:12px;
+}
+
+#box0:hover{
+  	height:480px;
+  	animation: expand 3s ease-in-out 0s ;
+}
+
+@keyframes expand {
+  0% {
+    width:50%;
+    height:80px;
+  }
+
+  100% {
+    width:50%;
+    height:480px;
+  }
+}
+
+#box1 {
+	font-family:brandon;
+	border-radius: 50%;
+	border:1px solid whitesmoke;
+ 	color:#001a33;
+ 	font-size:23px;
+ 	padding: 25px;
+ 	margin: auto;
+  	width: 50%;
+  	height: 80px;
+  	text-align:center;
+  	overflow: scroll;
+    transition: height 3s ease-in-out;
+}
+
+figcaption{
+	font-size:12px;
+}
+
+#box1:hover{
+  	height:480px;
+  	animation: expand 3s ease-in-out 0s ;
+}
+
+@keyframes expand {
+  0% {
+    width:50%;
+    height:80px;
+  }
+
+  100% {
+    width:50%;
+    height:480px;
+  }
+}
+
+#box2 {
+	font-family:brandon;
+	border-radius: 50%;
+	border:1px solid whitesmoke;
+ 	color:#001a33;
+ 	font-size:23px;
+ 	padding: 25px;
+ 	margin:auto;
+  	width: 50%;
+  	height: 80px;
+  	text-align:center;
+  	overflow: scroll;
+  	transition: height 3s ease-in-out;
+}
+
+#box2:hover{
+  height:480px;
+  animation: expand 3s ease-in-out 0s 1;
+}
+
+#box3 {
+	font-family:brandon;
+	border-radius: 50%;
+	border:1px solid whitesmoke;
+ 	color:#001a33;
+ 	font-size:23px;
+ 	padding: 25px;
+ 	margin: auto;
+  	width: 50%;
+  	height: 80px;
+  	text-align:center;
+  	overflow: scroll;
+  	transition: height 3s ease-in-out;
+}
+
+#box3:hover{
+  height:480px;
+  animation: expand 3s ease-in-out 0s 1;
+}
+
+#box4 {
+	font-family:brandon;
+	border-radius: 50%;
+	border:1px solid whitesmoke;
+ 	color:#001a33;
+ 	font-size:23px;
+ 	padding: 25px;
+ 	margin: auto;
+  	width: 50%;
+  	height: 80px;
+  	text-align:center;
+  	overflow: scroll;
+  	transition: height 3s ease-in-out;
+}
+
+#box4:hover{
+  height:480px;
+  animation: expand 3s ease-in-out 0s 1;
+}
+
+ul {
+    margin:auto;
+    width:30%;
+}
+
+a:link {
+	text-decoration:none;
+	color::#001a33;
+}
+
+a:hover {
+	color:white;
+}
+
+#box5 {
+	font-family:brandon;
+	border-radius: 50%;
+	border:1px solid whitesmoke;
+ 	color:#001a33;
+ 	font-size:23px;
+ 	padding: 25px;
+ 	margin: auto;
+  	width: 50%;
+  	height: 80px;
+  	text-align:center;
+  	overflow: scroll;
+  	transition: height 3s ease-in-out;
+}
+
+#box5:hover{
+  height:480px;
+  animation: expand 3s ease-in-out 0s 1;
+}
+
+#box6 {
+	font-family:brandon;
+	border-radius: 50%;
+	border:1px solid whitesmoke;
+ 	color:#001a33;
+ 	font-size:23px;
+ 	padding: 25px;
+ 	margin: auto;
+  	width: 50%;
+  	height: 80px;
+  	text-align:center;
+  	overflow: scroll;
+  	transition: height 3s ease-in-out;
+}
+
+#box6:hover{
+  height:480px;
+  animation: expand 3s ease-in-out 0s 1;
+}
+
+
+
