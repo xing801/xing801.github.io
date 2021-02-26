@@ -20,6 +20,7 @@ body {
   }
 
 img {
+    min-width: 20vw;
     max-width: 20vw;
     height: 400px;
     object-position: center;
