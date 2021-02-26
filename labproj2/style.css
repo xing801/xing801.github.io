@@ -2,6 +2,13 @@ html {
     display: block;
 }
 
+#title {
+    font-size:4rem;
+    color:cadetblue;
+    font-family:futura;
+    text-align:center;
+}
+
 body {
     margin-left: 50px;
     margin-right: 50px;
@@ -15,15 +22,14 @@ body {
 
 
 .box {
-    padding: 2rem;
-    text-align: center;
-  }
+  padding-top:50px;
+  text-align: center;
+}
 
 img {
-    min-width: 20vw;
-    max-width: 20vw;
-    height: 400px;
-    object-position: center;
+    min-width: 40vw;
+    max-width: 40vw;
+    height: 800px;
 }
 
 div {
@@ -37,6 +43,15 @@ div {
 }
 
 img {
-  min-width:50vw;
+  min-width:60vw;
+  height:400px;
+}
+
+body {
+  background-color:cadetblue;
+}
+
+#title {
+  color:white;
 }
 
