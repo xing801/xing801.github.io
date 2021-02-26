@@ -1,0 +1,159 @@
+/*#container {
+  margin:auto;
+  padding:20px;
+  display:flex;
+  width:50%;
+  height:550px;
+}
+
+#box1 {
+  background-image:url("cfront.jpg");
+  background-size:contain;
+  background-repeat:no-repeat;
+  width: 50vw;
+  height: 500px;
+}
+
+#box2 {
+  background-image:url("cright.jpg");
+  background-size:contain;
+  background-repeat:no-repeat;
+  width: 50vw;
+  height: 500px;
+}
+
+#container1 {
+  margin:auto;
+  padding:20px;
+  display:flex;
+  width:50%;
+  height:550px;
+}
+
+#box3 {
+  background-image:url("cleft.jpg");
+  background-size:contain;
+  background-repeat:no-repeat;
+  width: 50vw;
+  height: 500px;
+}
+
+#box4 {
+  background-image:url("cback.jpg");
+  background-size:contain;
+  background-repeat:no-repeat;
+  width: 50vw;
+  height: 500px;
+}
+
+#container2 {
+  margin:auto;
+  padding:20px;
+  display:flex;
+  width:50%;
+  height:550px;
+}
+
+#box5 {
+  background-image:url("ctop.jpg");
+  background-size:contain;
+  background-repeat:no-repeat;
+  width: 50vw;
+  height: 500px;
+}
+
+#box6 {
+  background-image:url("cbottom.jpg");
+  background-size:contain;
+  background-repeat:no-repeat;
+  width: 50vw;
+  height: 500px;
+}
+*/
+
+@media (max-width:500px){
+ .row {
+  display:block;
+  flex-direction: column;
+}
+
+<picture>
+  <source media="(max-width: 500px)" srcset="cfront.jpg">
+  <source media="(min-width: 501px)" srcset="ffront.jpg">
+  <img src="ffront.jpg">
+</picture>
+
+}
+
+
+.row {
+  display:flex;
+/*  flex-direction: row;
+*/  float:left;
+}
+
+/*#container2 {
+  display:flex;
+  flex-direction: row;
+}*/
+
+#img1 {
+  background-image: url("cfront.jpg");
+  background-repeat:no-repeat;
+  background-size:contain;
+  margin:20px;
+  width:40vw;
+  height:500px;
+}
+
+#img2 {
+  background-image: url("cright.jpg");
+  background-repeat:no-repeat;
+  background-size:contain;
+  margin:20px;
+  width:40vw;
+  height:500px;
+}
+
+
+#img3 {
+  background-image: url("cleft.jpg");
+  background-repeat:no-repeat;
+  background-size:contain;
+  margin:20px;
+  width:40vw;
+  height:500px;
+}
+
+#img4 {
+  background-image: url("cback.jpg");
+  background-repeat:no-repeat;
+  background-size:contain;
+  margin:20px;
+  width:40vw;
+  height:500px;
+  float:left;
+}
+
+#img5 {
+  background-image: url("ctop.jpg");
+  background-repeat:no-repeat;
+  background-size:contain;
+  margin:20px;
+  width:40vw;
+  height:500px;
+  float:right;
+}
+
+#img6 {
+  background-image: url("cbottom.jpg");
+  background-repeat:no-repeat;
+  background-size:contain;
+  margin:20px;
+  width:40vw;
+  height:500px;
+  float:right;
+}
+
+
+
