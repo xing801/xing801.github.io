@@ -18,23 +18,20 @@ body {
   font-size:1.5rem;
 }
 
-.row {
-  display:flex;
-    flex-direction: row;
-    justify-content: center;
-    width: 55%;
-    transition: 0.25s;
+#container {
+  width:50vw;
+  display:grid;
+  grid-template-columns: repeat(3,30rem);
+  grid-template-rows: repeat(3,30rem);
 }
-
 
 .page {
     overflow: hidden;
     font-size: 2rem;
     border: 1px solid #606060;
     line-height: 2rem;
-    height: 310px;
-    width: 80%;
     border-radius: 50%;
+    cursor:pointer;
 }
 
 #one {
@@ -167,6 +164,7 @@ body {
   position:absolute;
   right:0;
   bottom:0;
+  overflow:scroll;
   transition:all 2s ease-in-out;
 }
 
@@ -186,10 +184,17 @@ body {
 }
 
 .eclipse h1 {
-  margin-top:70px;
+  margin-top:7rem;
   text-align:center;
   font-size:4.5rem;
   font-weight:normal;
+}
+
+.eclipse p {
+  text-align:center;
+  font-size:2rem;
+  font-weight:normal;
+  margin-top:-2rem;
 }
 
 #eclipse2 {
@@ -216,14 +221,14 @@ body {
 
 #button {
   border-radius:50%;
-  margin:auto;
   padding:18px;
   width:60px;
   height:60px;
   background-image:radial-gradient(#606060 10%, whitesmoke 80%);
   position:fixed;
-  bottom:5%;
-  right:48%;
+  bottom:0;
+  right:0;
+  margin:3rem;
 }
   #button a:link {
     color: #606060;
@@ -380,6 +385,7 @@ body {
   position:absolute;
   right:0;
   bottom:0;
+  overflow:scroll;
   transition:all 2s ease-in-out;
 }
 
@@ -392,6 +398,7 @@ body {
   position:absolute;
   right:0;
   bottom:0;
+  overflow:scroll;
   transition:all 2s ease-in-out;
 }
 
@@ -404,6 +411,7 @@ body {
   position:absolute;
   right:0;
   bottom:0;
+  overflow:scroll;
   transition:all 2s ease-in-out;
 }
 
@@ -417,6 +425,7 @@ body {
   position:absolute;
   right:0;
   bottom:0;
+  overflow:scroll;
   transition:all 2s ease-in-out;
 }
 
@@ -429,6 +438,7 @@ body {
   position:absolute;
   right:0;
   bottom:0;
+  overflow:scroll;
   transition:all 2s ease-in-out;
 }
 
@@ -442,6 +452,7 @@ body {
   position:absolute;
   right:0;
   bottom:0;
+  overflow:scroll;
   transition:all 2s ease-in-out;
 }
 
@@ -454,6 +465,7 @@ body {
   position:absolute;
   right:0;
   bottom:0;
+  overflow:scroll;
   transition:all 2s ease-in-out;
 }
 
@@ -466,6 +478,7 @@ body {
   position:absolute;
   right:0;
   bottom:0;
+  overflow:scroll;
   transition:all 2s ease-in-out;
 }
 
@@ -518,8 +531,16 @@ body {
   }
   
   .eclipse h1{
-    font-size:1rem;
+    font-size:1.5rem;
+    margin-top:4rem;
   }
+
+   .eclipse p {
+  text-align:center;
+  font-size:1rem;
+  font-weight:normal;
+  margin-top:-1rem;
+}
   
   #eclipse2 {
     width:50%;
@@ -530,27 +551,161 @@ body {
     width:50%;
     height:100px;
   }
+
+  #button {
+  border-radius:50%;
+  padding:8px;
+  width:40px;
+  height:40px;
+  background-image:radial-gradient(#606060 10%, whitesmoke 80%);
+  position:fixed;
+  bottom:0;
+  right:0;
+  margin:3rem;
+}
   
-  .row{
-    flex-direction:column;
+  #container{
+    grid-template-columns: repeat(1,10rem);
+    grid-template-rows: repeat(9,10rem);
   }
+
+  .number{
+    font-size:1rem;
+  }
+
+  .dot {
+  margin:10px;
+  border-radius:50%;
+  width:50px;
+  height:50px;
+  background-image:radial-gradient(#606060 10%, whitesmoke 80%);
+  position:absolute;
+  right:0;
+  bottom:0;
+  overflow:scroll;
+  transition:all 2s ease-in-out;
+}
+
+.dot2 {
+  margin:10px;
+  border-radius:50%;
+  width:50px;
+  height:50px;
+  background-image:radial-gradient(#606060 10%, whitesmoke 80%);
+  position:absolute;
+  right:0;
+  bottom:0;
+  overflow:scroll;
+  transition:all 2s ease-in-out;
+}
+
+.dot3 {
+  margin:10px;
+  border-radius:50%;
+  width:50px;
+  height:50px;
+  background-image:radial-gradient(#606060 10%, whitesmoke 80%);
+  position:absolute;
+  right:0;
+  bottom:0;
+  overflow:scroll;
+  transition:all 2s ease-in-out;
+}
+
+.dot4 {
+  margin:10px;
+  border-radius:50%;
+  width:50px;
+  height:50px;
+  background-image:radial-gradient(#606060 10%, whitesmoke 80%);
+  position:absolute;
+  right:0;
+  bottom:0;
+  overflow:scroll;
+  transition:all 2s ease-in-out;
+}
+
+.dot5 {
+  margin:10px;
+  border-radius:50%;
+  width:50px;
+  height:50px;
+  background-image:radial-gradient(#606060 10%, whitesmoke 80%);
+  position:absolute;
+  right:0;
+  bottom:0;
+  overflow:scroll;
+  transition:all 2s ease-in-out;
+}
+
+.dot6 {
+  margin:10px;
+  border-radius:50%;
+  width:50px;
+  height:50px;
+  background-image:radial-gradient(#606060 10%, whitesmoke 80%);
+  position:absolute;
+  right:0;
+  bottom:0;
+  overflow:scroll;
+  transition:all 2s ease-in-out;
+}
+
+.dot7 {
+  margin:10px;
+  border-radius:50%;
+  width:50px;
+  height:50px;
+  background-image:radial-gradient(#606060 10%, whitesmoke 80%);
+  position:absolute;
+  right:0;
+  bottom:0;
+  overflow:scroll;
+  transition:all 2s ease-in-out;
+}
+
+.dot8 {
+  margin:10px;
+  border-radius:50%;
+  width:50px;
+  height:50px;
+  background-image:radial-gradient(#606060 10%, whitesmoke 80%);
+  position:absolute;
+  right:0;
+  bottom:0;
+  overflow:scroll;
+  transition:all 2s ease-in-out;
+}
+
+.dot9 {
+  margin:10px;
+  border-radius:50%;
+  width:50px;
+  height:50px;
+  background-image:radial-gradient(#606060 10%, whitesmoke 80%);
+  position:absolute;
+  right:0;
+  bottom:0;
+  overflow:scroll;
+  transition:all 2s ease-in-out;
+}
   
   #paragraph p{
-    font-size:1.3rem;
-    line-height:1.3rem;
+    font-size:1rem;
+    line-height:1rem;
     position:absolute;
     right:15%;
     top:-40%;
-    width:100vw;
+    width:80vw;
   }
   
   #paragraph2 p{
-    font-size:1.3rem;
-    line-height:1.3rem;
+    font-size:1rem;
+    line-height:1rem;
     position:absolute;
     right:15%;
     top:-40%;
-    width:100vw;
+    width:80vw;
   }
   
   #paragraph3 p{
@@ -559,66 +714,229 @@ body {
     position:absolute;
     right:5%;
     top:-45%;
-    width:100vw;
+    width:80vw;
+    padding:6rem;
+    padding-right:2rem;
   }
  
    #paragraph4 p{
-     font-size:1rem;
+    font-size:1rem;
     line-height:1rem;
     position:absolute;
     right:5%;
-    top:-35%;
-    width:100vw;
+    top:-50%;
+    padding:6rem;
+    padding-right:2rem;
+    width:80vw;
   }
   
   #paragraph5 p{
-     font-size:1rem;
+    font-size:1rem;
     line-height:1rem;
     position:absolute;
-    right:18%;
-    top:-25%;
-    width:100vw;
+    right:5%;
+    top:-50%;
+    padding:6rem;
+    padding-right:2rem;
+    width:80vw;
   }
   
   #paragraph6 p{
     font-size:1rem;
     line-height:1rem;
     position:absolute;
-    right:18%;
-    top:-25%;
-    width:100vw;
+    right:5%;
+    top:-50%;
+    padding:6rem;
+    padding-right:2rem;
+    width:80vw;
   }
   
   #paragraph7 p{
     font-size:1rem;
     line-height:1rem;
     position:absolute;
-    right:18%;
-    top:-25%;
-    width:100vw;
+    right:5%;
+    top:-40%;
+    padding:6rem;
+    padding-right:2rem;
+    width:80vw;
   }
   
   #paragraph8 p{
-    font-size:1.3rem;
-    line-height:1.3rem;
+    font-size:1rem;
+    line-height:1rem;
     position:absolute;
-    right:18%;
-    top:-25%;
-    width:100vw;
+    right:5%;
+    top:-40%;
+    padding:6rem;
+    padding-right:2rem;
+    width:80vw;
   }
   
   #paragraph9 p{
-    font-size:1.3rem;
-    line-height:1.3rem;
+    font-size:1rem;
+    line-height:1rem;
     position:absolute;
-    right:18%;
-    top:-25%;
-    width:100vw;
+    right:5%;
+    top:-40%;
+    padding:6rem;
+    padding-right:2rem;
+    width:80vw;
   }
   
-  .page {
-    min-width:50%;
-    height:100px;
+  .expand {
+    width:80vw;
+    height:50vh;
+  }
+  
+  .expand2 {
+    width:80vw;
+    height:50vh;
+  }
+  
+  .expand3 {
+    width:80vw;
+    height:50vh;
+  }
+  
+  .expand4 {
+    width:80vw;
+    height:50vh;
+  }
+  
+  .expand5 {
+    width:80vw;
+    height:50vh;
+  }
+  
+  .expand6 {
+    width:80vw;
+    height:50vh;
+  }
+  
+  .expand7 {
+    width:80vw;
+    height:50vh;
+  }
+  
+  .expand8 {
+    width:80vw;
+    height:50vh;
+  }
+  
+  .expand9 {
+    width:80vw;
+    height:50vh;
+  }
+}
+
+@media (min-width:768px)  {
+  .eclipse h1{
+    font-size:2.8rem;
+    margin-top:8rem;
+  }
+
+  .eclipse p {
+  text-align:center;
+  font-size:1.5rem;
+  font-weight:normal;
+  margin-top:-1rem;
+}
+
+  #container{
+    grid-template-columns: repeat(3,20rem);
+    grid-template-rows: repeat(3,20rem);
+  }
+
+  #paragraph p{
+    font-size:2rem;
+    line-height:2rem;
+    position:absolute;
+    margin:auto;
+    right:12rem;
+    top:5rem;
+    width:80vw;
+  }
+
+  #paragraph2 p{
+    font-size:2rem;
+    line-height:2rem;
+    position:absolute;
+    margin:auto;
+    right:12rem;
+    top:5rem;
+    width:80vw;
+  }
+
+  #paragraph3 p{
+    font-size:1.8rem;
+    line-height:1.8rem;
+    position:absolute;
+    margin:auto;
+    right:12rem;
+    top:2rem;
+    width:80vw;
+  }
+
+  #paragraph4 p{
+    font-size:1.8rem;
+    line-height:1.8rem;
+    position:absolute;
+    margin:auto;
+    right:12rem;
+    top:2rem;
+    width:80vw;
+  }
+
+  #paragraph5 p{
+    font-size:1.8rem;
+    line-height:1.8rem;
+    position:absolute;
+    margin:auto;
+    right:14rem;
+    top:6rem;
+    width:80vw;
+  }
+
+  #paragraph6 p{
+    font-size:1.8rem;
+    line-height:1.8rem;
+    position:absolute;
+    margin:auto;
+    right:14rem;
+    top:6rem;
+    width:80vw;
+  }
+
+  #paragraph7 p{
+    font-size:1.8rem;
+    line-height:1.8rem;
+    position:absolute;
+    margin:auto;
+    right:14rem;
+    top:8rem;
+    width:80vw;
+  }
+
+  #paragraph8 p{
+    font-size:1.8rem;
+    line-height:1.8rem;
+    position:absolute;
+    margin:auto;
+    right:14rem;
+    top:8rem;
+    width:80vw;
+  }
+
+  #paragraph9 p{
+    font-size:1.8rem;
+    line-height:1.8rem;
+    position:absolute;
+    margin:auto;
+    right:14rem;
+    top:8rem;
+    width:80vw;
   }
   
   .expand {
@@ -665,5 +983,197 @@ body {
     width:100vw;
     height:50vh;
   }
+}
+
+@media only screen and (min-width: 1200px) {
+  
+  .eclipse h1{
+    font-size:4.5rem;
+    margin-top:7rem;
+  }
+
+  .eclipse p {
+  text-align:center;
+  font-size:2rem;
+  font-weight:normal;
+  margin-top:-2rem;
+}
+
+  #container{
+    grid-template-columns: repeat(3,30rem);
+    grid-template-rows: repeat(3,30rem);
+  }
+
+  .expand {
+  width: 50vw;
+  height: 100vh;
+}
+
+.expand2 {
+  width: 50vw;
+  height: 100vh;
+}
+
+.expand3 {
+  width: 50vw;
+  height: 100vh;
+}
+
+.expand4 {
+  width: 50vw;
+  height: 100vh;
+}
+
+.expand5 {
+  width: 50vw;
+  height: 100vh;
+}
+
+.expand6 {
+  width: 50vw;
+  height: 100vh;
+}
+
+.expand7 {
+  width: 50vw;
+  height: 100vh;
+}
+
+.expand8 {
+  width: 50vw;
+  height: 100vh;
+}
+
+.expand9 {
+  width: 50vw;
+  height: 100vh;
+}
+
+#paragraph p{
+  color:#E8E8E8;
+  opacity:50%;
+  flex-basis:50%;
+  font-size:2.5rem;
+  line-height:2.5rem;
+  margin:auto;
+  top:20rem;
+  width:45vw;
+  position:absolute;
+  left:5rem;
+  padding:50px;
+}
+
+#paragraph2 p{
+  color:#E8E8E8;
+  opacity:50%;
+  flex-basis:50%;
+  font-size:2.5rem;
+  line-height:2.5rem;
+  margin:auto;
+  top:20rem;
+  width:45vw;
+  position:absolute;
+  left:5rem;
+  padding:50px;
+}
+
+#paragraph3 p{
+  color:#E8E8E8;
+  opacity:50%;
+  flex-basis:50%;
+  font-size:2.3rem;
+  line-height:2.3rem;
+  margin:auto;
+  top:16rem;
+  width:45vw;
+  position:absolute;
+  left:5rem;
+  padding:50px;
+}
+
+#paragraph4 p{
+  color:#E8E8E8;
+  opacity:50%;
+  flex-basis:50%;
+  font-size:2.3rem;
+  line-height:2.3rem;
+  margin:auto;
+  top:16rem;
+  width:45vw;
+  position:absolute;
+  left:5rem;
+  padding:50px;
+}
+
+#paragraph5 p{
+  color:#E8E8E8;
+  opacity:50%;
+  flex-basis:50%;
+  font-size:2.3rem;
+  line-height:2.3rem;
+  margin:auto;
+  top:16rem;
+  width:45vw;
+  position:absolute;
+  left:5rem;
+  padding:50px;
+}
+
+#paragraph6 p{
+  color:#E8E8E8;
+  opacity:50%;
+  flex-basis:50%;
+  font-size:2.3rem;
+  line-height:2.3rem;
+  margin:auto;
+  top:16rem;
+  width:45vw;
+  position:absolute;
+  left:5rem;
+  padding:50px;
+}
+
+#paragraph7 p{
+  color:#E8E8E8;
+  opacity:50%;
+  flex-basis:50%;
+  font-size:2.4rem;
+  line-height:2.4rem;
+  margin:auto;
+  top:16rem;
+  width:45vw;
+  position:absolute;
+  left:5rem;
+  padding:50px;
+}
+
+#paragraph8 p{
+  color:#E8E8E8;
+  opacity:50%;
+  flex-basis:50%;
+  font-size:2.5rem;
+  line-height:2.5rem;
+  margin:auto;
+  top:20rem;
+  width:45vw;
+  position:absolute;
+  left:5rem;
+  padding:50px;
+}
+
+#paragraph9 p{
+  color:#E8E8E8;
+  opacity:50%;
+  flex-basis:50%;
+  font-size:2.5rem;
+  line-height:2.5rem;
+  margin:auto;
+  top:20rem;
+  width:45vw;
+  position:absolute;
+  left:5rem;
+  padding:50px;
+}
+
 }
 
