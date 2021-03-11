@@ -1,0 +1,141 @@
+body {
+  background-color:rgb(22, 22, 54);
+}
+
+#container {
+  display:grid;
+  grid-template-columns:repeat(3,18rem);
+  justify-content: center;
+  margin-top:35vh;
+}
+
+#box1 {
+  animation-name: one;
+  animation-duration: 18s;
+  animation-iteration-count: infinite;
+  height:12rem;
+  width:12rem;
+}
+
+#box2 {
+  animation-name: two;
+  animation-duration: 18s;
+  animation-iteration-count: infinite;
+  height:12rem;
+  width:12rem;
+}
+
+#box3 {
+  animation-name: three;
+  animation-duration: 12s;
+  animation-iteration-count: infinite;
+  height:12rem;
+  width:12rem;
+}
+
+p {
+  color:white;
+  font-size:1rem;
+  padding:4rem; 
+  text-align: center;
+  opacity:0;
+}
+
+#box1:hover {
+  animation-play-state: running, paused;
+  cursor:grabbing;
+}
+#box1 p:hover {
+  opacity:1;
+}
+
+#box2:hover {
+  animation-play-state: running, paused;
+  cursor:grabbing;
+}
+#box2 p:hover {
+  opacity:1;
+}
+
+#box3:hover {
+  animation-play-state: running, paused;
+  cursor:grabbing;
+}
+#box3 p:hover {
+  opacity:1;
+}
+
+@keyframes one{
+  
+0% {
+    background-color: rgb(138, 138, 184);
+}
+20% {
+    background-color: rgb(221, 202, 227);
+}
+40% {
+    background-color: rgb(227, 202, 207);
+}
+60% {
+    background-color: rgb(227, 209, 202);
+} 
+80% {
+    background-color: rgb(227, 227, 202);
+}
+100% {
+    background-color: rgb(202, 227, 212);
+}
+}
+
+@keyframes two{
+  
+0% {
+    background-color: rgb(10, 242, 103);
+}
+20% {
+    background-color: rgb(10, 215, 242);
+}
+40% {
+    background-color: rgb(242, 10, 230);
+}
+60% {
+    background-color: rgb(255, 160, 51);
+} 
+80% {
+    background-color: rgb(255, 248, 56);
+}
+100% {
+    background-color: rgb(209, 255, 56);
+}
+}
+
+@keyframes three{
+  
+0% {
+    background-color: rgb(237, 180, 237);
+}
+20% {
+    background-color: rgb(194, 145, 194);
+}
+40% {
+    background-color: rgb(150, 111, 150);
+}
+60% {
+    background-color: rgb(115, 85, 115);
+} 
+80% {
+    background-color: rgb(71, 53, 71);
+}
+100% {
+    background-color: rgb(36, 27, 36);
+}
+}
+
+@media only screen and (max-width: 676px){
+  #container {
+  display:grid;
+  grid-template-columns:repeat(1,12rem);
+  row-gap: 10%;
+  margin-top:15vh;
+  }
+}
