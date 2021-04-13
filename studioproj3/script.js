@@ -49,14 +49,56 @@ function showCovers() {
     // coverName.innerText = cover.fields.name;
     // document.body.append(coverName);
  
- 	var bookContainer = document.createElement("div");
- 	bookContainer.classList.add("book-container");
- 	document.querySelector(".container").append(bookContainer);
+  	var bookContainer = document.createElement("div");
+  	bookContainer.classList.add("book-container");
+ 	  document.querySelector(".container").append(bookContainer);
 
-	var coverName = document.createElement("h1");
-	coverName.classList.add("cover-name");
+	  var coverName = document.createElement("h1");
+    coverName.innerText = cover.fields.tag;
+    bookContainer.append(coverName);
+
+    var coverName = document.createElement("h2");
     coverName.innerText = cover.fields.name;
-    document.body.append(coverName); 
-  
+    bookContainer.append(coverName);
+
+    var coverName = document.createElement("h3");
+    coverName.innerText = cover.fields.author;
+    bookContainer.append(coverName);
+
+    var coverName = document.createElement("p");
+    // coverInfo.classList.add("cover-info");
+    coverName.innerText = cover.fields.info;
+    bookContainer.append(coverName);
+
+    var coverImage = document.createElement('img');
+    coverImage.src = cover.fields.image[0].url;
+    bookContainer.append(coverImage);
+
+    let tagOne = covers.filter(cover => cover.fields.tag == '1');
+    let tagTwo = covers.filter(cover => cover.fields.tag == '2');
+    let tagThree = covers.filter(cover => cover.fields.tag == '3');
+    let tagFour = covers.filter(cover => cover.fields.tag == '4');
+    let tagFive = covers.filter(cover => cover.fields.tag == '5');
+    let tagSix = covers.filter(cover => cover.fields.tag == '6');
+
+    bookContainer.addEventListener("click", function() {
+        coverInfo.classList.toggle("active");
+    })
+
   });
+}
+
+
+var cube = document.getElementById('cube');
+var min = 1;
+var max = 24;
+cube.onclick = function() {
+  var xRand = getRandom(max, min);
+  var yRand = getRandom(max, min)
+  cube.style.webkitTransform = 'rotateX('+xRand+'deg)rotateY('+yRand+'deg)';
+  cube.style.transform = 'rotateX('+xRand+'deg) rotateY('+yRand+'deg)';
+}
+
+function getRandom(max,min) {
+  return (Math.floor (Math.random() * (max-min)) + min) * 90;
 }
