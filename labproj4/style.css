@@ -1,0 +1,55 @@
+body {
+	background-color: cadetblue;
+}
+
+#container {
+	margin: 1rem;
+}
+
+#one {
+	display: none;
+}
+
+#two {
+	display: none;
+}
+
+#three {
+	display: none;
+}
+
+#four {
+	display: none;
+}
+
+#group1 {
+	color: white;
+	font-size: 1rem;
+	font-family: futura;
+    cursor: pointer;
+}
+
+p:hover {
+	color: salmon;
+}
+
+#group2 {
+	color: white;
+	font-family: futura;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+#group3 {
+	color: white;
+	font-family: futura;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+#group4 {
+	color: white;
+	font-family: futura;
+	font-size: 1rem;
+    cursor: pointer;
+}
