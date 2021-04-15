@@ -251,3 +251,20 @@ cube.onclick = function() {
 function getRandom(max,min) {
   return (Math.floor (Math.random() * (max-min)) + min) * 90;
 }
+
+let users = ['1','2','3','4','5','6','7','8','9','10','11','12','13','14','15','16','17'];
+
+function getRandomNumber(min,max) {
+  let step1 = max - min + 1;
+  let step2 = Math.random() * step1;
+  let result = Math.floor(step2) + min;
+
+  return result;
+}
+let btnRandom = document.querySelector('button');
+let result = document.querySelector('h1');
+
+btnRandom.addEventListener('click', () => {
+  let index = getRandomNumber(0, users.length-1);
+  result.innerText = users[index];
+});

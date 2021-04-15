@@ -12,11 +12,16 @@ body {
 	grid-template-columns: repeat(12, 10rem);
 }*/
 
-/*.container {
-	width: 70vw;
-	float: right;
+.container {
+	right: 0;	
 	overflow: scroll;
-}*/
+}
+
+#instructions {
+	position: sticky;
+	width: 30vw;
+	border: 1px solid black;
+}
 
 #group1 img {
 	padding: 1rem;
@@ -135,13 +140,11 @@ body {
 }
 
 .container2 {
-	width: 200px;
-	height: 200px;
-	position: absolute;
+	border: 1px solid black;
+	width: 30vw;
+	height: 30vw;
+	position: sticky;
 	left: 0;
-	top: 0;
-	padding: 5rem;
-	margin: auto;
 	border: 1 px solid #fff;
 	perspective: 1000px;
 	perspective-origin: 50% 100%;
@@ -151,10 +154,9 @@ body {
 #cube {
 	width:100%;
 	height:100%;
-	top:100px;
-	position: absolute;
+	margin: auto;
 	transform-style: preserve-3d;
-	transition: transform 6s;
+	transition: transform 5s;
 }
 
 #cube:hover {
@@ -169,9 +171,6 @@ body {
 	height: 100px;
 	border: 2px solid coral;
 	margin: 0 auto;
-	font-family: Arial, Helvetica, sans-serif;
-	font-size: 500%;
-	text-align: center;
 	padding: 50px 0;
 }
 
@@ -287,4 +286,20 @@ body {
 .bottom .dot6 {
 	top: 125px;
 	left: 125px;
+}
+
+#container3 {
+	width: 30vw;
+	position: sticky;
+	bottom: 0;
+	border: 1px solid black;
+}
+
+#container button {
+	padding: 1rem;
+	margin: auto;
+}
+
+#container h1 {
+	margin: auto;
 }
