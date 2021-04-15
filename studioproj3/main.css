@@ -3,41 +3,58 @@ body {
     font-family: Arial;
 }
 
-.book-container {
+/*.book-container {
 	padding: 1rem;
 	border: 1px solid black;
 	border-radius: 10%;
 	width: 15rem;
-	float: right;
-/*	grid-template-rows: repeat(9, 10rem);
-	grid-template-columns: repeat(12, 10rem);*/
-}
+	grid-template-rows: repeat(9, 10rem);
+	grid-template-columns: repeat(12, 10rem);
+}*/
 
-.container {
+/*.container {
 	width: 70vw;
 	float: right;
 	overflow: scroll;
-}
+}*/
 
-.book-container img {
+#group1 img {
+	padding: 1rem;
 	width: 100%;
 	height: auto;
-	display: none;
+	/*display: none;*/
 }
 
-.book-container p {
+#group1 p {
+	padding: 1rem;
 	width: 100%;
 	height: auto;
-	display: none;
+	/*display: none;*/
 }
 
-/*#group1 {
+#group1 {
     font-size: 2rem;
     border: 1px solid #606060;
     border-radius: 5%;
     cursor: pointer;
     overflow: scroll;
 }
+
+#group1 h2, h3{
+	padding: 1rem;
+/*	border: 1px solid black;*/
+	border-radius: 10%;
+	width: 100%;
+	margin: auto;
+}
+
+/*#tagOne {
+	padding: 1rem;
+	border: 1px solid black;
+	border-radius: 10%;
+	width: 15rem;
+	float: right;
+}*/
 
 #group2 {
     font-size: 2rem;
@@ -52,6 +69,7 @@ body {
     border: 1px solid #606060;
     border-radius: 5%;
     cursor: pointer;
+    overflow: scroll; 
 }
 
 #group4 {
@@ -59,6 +77,7 @@ body {
     border: 1px solid #606060;
     border-radius: 5%;
     cursor: pointer;
+    overflow: scroll;
 }
 
 #group5 {
@@ -66,6 +85,7 @@ body {
     border: 1px solid #606060;
     border-radius: 5%;
     cursor: pointer;
+    overflow: scroll;
 }
 
 #group6 {
@@ -73,15 +93,16 @@ body {
     border: 1px solid #606060;
     border-radius: 5%;
     cursor: pointer;
-}*/
+    overflow: scroll;
+}
 
-/*.container {
+.container {
 	display:grid;
 	grid-template-columns: repeat(2, 30rem);
 	grid-template-rows: repeat(3, 20rem);
 	float: right;
 	padding: 1rem;
-}*/
+}
 
 *
 {
