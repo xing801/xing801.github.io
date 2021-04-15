@@ -1,4 +1,4 @@
-$(document).ready(function() { 
+$(document).ready(function() {   
 
 	var group1 = $("group1"); 
 
@@ -6,6 +6,9 @@ $(document).ready(function() {
 		$("#one").toggle() 
 	});
 })
+
+//line 1 allows the function to execute when the document is loaded
+//the variable 'group1' is selected. when clicked, image #one will toggle on and off.
 
 
 $(document).ready(function() { 
