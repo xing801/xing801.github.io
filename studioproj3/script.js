@@ -50,140 +50,134 @@ function showCovers() {
     let tagFive = covers.filter(cover => cover.fields.tag == '5');
     let tagSix = covers.filter(cover => cover.fields.tag == '6');
 
-    var box1 = document.querySelector("#group1");
+    var box1 = document.querySelector("#group2");
     box1.addEventListener("click", function() {
       box1.innerHTML = ``;
       tagOne.forEach((cover) => {
-        var coverName = document.createElement("h2");
-        coverName.innerText = cover.fields.name;
-        box1.append(coverName);
+        var coverName = document.createElement("details");
+        // coverName.innerText = cover.fields.name;
+        coverName.innerHTML = `
+        <summary> ${cover.fields.order} </summary>
+        <h1> ${cover.fields.name} </h1>
+        <h3> ${cover.fields.author} </h3>
+        <p> ${cover.fields.info} </p>
+        <img src="${cover.fields.image[0].url}"> 
+        `
+        coverName.addEventListener('click', function(event){
+          event.stopPropagation();
+        })
 
-        var coverName = document.createElement("h3");
-        coverName.innerText = cover.fields.author;
         box1.append(coverName);
-
-        var coverName = document.createElement("p");
-        coverName.innerText = cover.fields.info;
-        box1.append(coverName);
-
-        var coverImage = document.createElement('img');
-        coverImage.src = cover.fields.image[0].url;
-        box1.append(coverImage);
 
       })
     })
 
-    var box2 = document.querySelector("#group2");
+    var box2 = document.querySelector("#group3");
     box2.addEventListener("click", function() {
       box2.innerHTML = ``;
       tagTwo.forEach((cover) => {
-        var coverName = document.createElement("h2");
-        coverName.innerText = cover.fields.name;
-        box2.append(coverName);
+        var coverName = document.createElement("details");
+        // coverName.innerText = cover.fields.name;
+        coverName.innerHTML = `
+        <summary> ${cover.fields.order} </summary>
+        <h1> ${cover.fields.name} </h1>
+        <h3> ${cover.fields.author} </h3>
+        <p> ${cover.fields.info} </p>
+        <img src="${cover.fields.image[0].url}"> 
+        `
+        coverName.addEventListener('click', function(event){
+          event.stopPropagation();
+        })
 
-        var coverName = document.createElement("h3");
-        coverName.innerText = cover.fields.author;
         box2.append(coverName);
-
-        var coverName = document.createElement("p");
-        coverName.innerText = cover.fields.info;
-        box2.append(coverName);
-
-        var coverImage = document.createElement('img');
-        coverImage.src = cover.fields.image[0].url;
-        box2.append(coverImage);
 
       })
     })
 
-    var box3 = document.querySelector("#group3");
+    var box3 = document.querySelector("#group5");
     box3.addEventListener("click", function() {
       box3.innerHTML = ``;
       tagThree.forEach((cover) => {
-        var coverName = document.createElement("h2");
-        coverName.innerText = cover.fields.name;
-        box3.append(coverName);
+        var coverName = document.createElement("details");
+        // coverName.innerText = cover.fields.name;
+        coverName.innerHTML = `
+        <summary> ${cover.fields.order} </summary>
+        <h1> ${cover.fields.name} </h1>
+        <h3> ${cover.fields.author} </h3>
+        <p> ${cover.fields.info} </p>
+        <img src="${cover.fields.image[0].url}"> 
+        `
+        coverName.addEventListener('click', function(event){
+          event.stopPropagation();
+        })
 
-        var coverName = document.createElement("h3");
-        coverName.innerText = cover.fields.author;
         box3.append(coverName);
-
-        var coverName = document.createElement("p");
-        coverName.innerText = cover.fields.info;
-        box3.append(coverName);
-
-        var coverImage = document.createElement('img');
-        coverImage.src = cover.fields.image[0].url;
-        box3.append(coverImage);
 
       })
     })
 
-    var box4 = document.querySelector("#group4");
+    var box4 = document.querySelector("#group6");
     box4.addEventListener("click", function() {
       box4.innerHTML = ``;
       tagFour.forEach((cover) => {
-        var coverName = document.createElement("h2");
-        coverName.innerText = cover.fields.name;
-        box4.append(coverName);
+        var coverName = document.createElement("details");
+        // coverName.innerText = cover.fields.name;
+        coverName.innerHTML = `
+        <summary> ${cover.fields.order} </summary>
+        <h1> ${cover.fields.name} </h1>
+        <h3> ${cover.fields.author} </h3>
+        <p> ${cover.fields.info} </p>
+        <img src="${cover.fields.image[0].url}"> 
+        `
+        coverName.addEventListener('click', function(event){
+          event.stopPropagation();
+        })
 
-        var coverName = document.createElement("h3");
-        coverName.innerText = cover.fields.author;
         box4.append(coverName);
-
-        var coverName = document.createElement("p");
-        coverName.innerText = cover.fields.info;
-        box4.append(coverName);
-
-        var coverImage = document.createElement('img');
-        coverImage.src = cover.fields.image[0].url;
-        box4.append(coverImage);
 
       })
     })
 
-    var box5 = document.querySelector("#group5");
+    var box5 = document.querySelector("#group8");
     box5.addEventListener("click", function() {
       box5.innerHTML = ``;
       tagFive.forEach((cover) => {
-        var coverName = document.createElement("h2");
-        coverName.innerText = cover.fields.name;
-        box5.append(coverName);
+        var coverName = document.createElement("details");
+        // coverName.innerText = cover.fields.name;
+        coverName.innerHTML = `
+        <summary> ${cover.fields.order} </summary>
+        <h1> ${cover.fields.name} </h1>
+        <h3> ${cover.fields.author} </h3>
+        <p> ${cover.fields.info} </p>
+        <img src="${cover.fields.image[0].url}"> 
+        `
+        coverName.addEventListener('click', function(event){
+          event.stopPropagation();
+        })
 
-        var coverName = document.createElement("h3");
-        coverName.innerText = cover.fields.author;
         box5.append(coverName);
-
-        var coverName = document.createElement("p");
-        coverName.innerText = cover.fields.info;
-        box5.append(coverName);
-
-        var coverImage = document.createElement('img');
-        coverImage.src = cover.fields.image[0].url;
-        box5.append(coverImage);
 
       })
     })
 
-    var box6 = document.querySelector("#group6");
+     var box6 = document.querySelector("#group9");
     box6.addEventListener("click", function() {
       box6.innerHTML = ``;
       tagSix.forEach((cover) => {
-        var coverName = document.createElement("h2");
-        coverName.innerText = cover.fields.name;
-        box6.append(coverName);
+        var coverName = document.createElement("details");
+        // coverName.innerText = cover.fields.name;
+        coverName.innerHTML = `
+        <summary> ${cover.fields.order} </summary>
+        <h1> ${cover.fields.name} </h1>
+        <h3> ${cover.fields.author} </h3>
+        <p> ${cover.fields.info} </p>
+        <img src="${cover.fields.image[0].url}"> 
+        `
+        coverName.addEventListener('click', function(event){
+          event.stopPropagation();
+        })
 
-        var coverName = document.createElement("h3");
-        coverName.innerText = cover.fields.author;
         box6.append(coverName);
-
-        var coverName = document.createElement("p");
-        coverName.innerText = cover.fields.info;
-        box6.append(coverName);
-
-        var coverImage = document.createElement('img');
-        coverImage.src = cover.fields.image[0].url;
-        box6.append(coverImage);
 
       })
     })
@@ -252,7 +246,7 @@ function getRandom(max,min) {
   return (Math.floor (Math.random() * (max-min)) + min) * 90;
 }
 
-let users = ['1','2','3','4','5','6','7','8','9','10','11','12','13','14','15','16','17'];
+let users = ['1','2','3','4','5','6','7','8','9','10','11','12','13','14','15','16','17','18'];
 
 function getRandomNumber(min,max) {
   let step1 = max - min + 1;
