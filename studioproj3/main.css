@@ -1,6 +1,8 @@
 
 body {
+	background-color:  #f6e2bb;
     font-family: Arial;
+    padding: 2rem;
 }
 
 /*.book-container {
@@ -12,11 +14,6 @@ body {
 	grid-template-columns: repeat(12, 10rem);
 }*/
 
-#instructions {
-	font-family: futura;
-	font-size: 1.4rem;
-	padding: 2rem;
-}
 
 #group1 img {
 	padding: 1rem;
@@ -27,24 +24,21 @@ body {
 
 #group1 p {
 	padding: 1rem;
-	width: 100%;
-	height: auto;
 	/*display: none;*/
 }
 
 #group1 {
-    font-size: 2rem;
-    border: 1px solid #606060;
+    border: 1px solid  #25745a;
     border-radius: 5%;
     cursor: pointer;
     overflow: scroll;
+    padding: 2rem;
 }
 
 #group1 h2, h3{
 	padding: 1rem;
 /*	border: 1px solid black;*/
 	border-radius: 10%;
-	width: 100%;
 	margin: auto;
 }
 
@@ -56,9 +50,36 @@ body {
 	float: right;
 }*/
 
+h1 {
+	color: #25745a;
+	font-size: 3rem;
+	padding-left: 1rem;
+}
+
+h3 {
+	color: #25745a;
+	font-size: 2rem;
+}
+
+h2 {
+	color: #25745a;
+	font-size: 2rem;
+}
+p {
+	color: #25745a;
+	font-size: 1rem;
+	padding: 1rem;
+}
+
+img {
+	width: 80%;
+	height: auto;
+	padding: 1rem;
+}
+
 #group2 {
     font-size: 2rem;
-    border: 1px solid #606060;
+    border: 1px solid #25745a;
     border-radius: 5%;
     cursor: pointer;
     overflow: scroll;
@@ -66,7 +87,7 @@ body {
 
 #group3 {
     font-size: 2rem;
-    border: 1px solid #606060;
+    border: 1px solid #25745a;
     border-radius: 5%;
     cursor: pointer;
     overflow: scroll; 
@@ -74,7 +95,7 @@ body {
 
 #group4 {
     font-size: 2rem;
-    border: 1px solid #606060;
+    border: 1px solid #25745a;
     border-radius: 5%;
     cursor: pointer;
     overflow: scroll;
@@ -82,7 +103,7 @@ body {
 
 #group5 {
     font-size: 2rem;
-    border: 1px solid #606060;
+    border: 1px solid #25745a;
     border-radius: 5%;
     cursor: pointer;
     overflow: scroll;
@@ -90,7 +111,7 @@ body {
 
 #group6 {
     font-size: 2rem;
-    border: 1px solid #606060;
+    border: 1px solid #25745a;
     border-radius: 5%;
     cursor: pointer;
     overflow: scroll;
@@ -98,7 +119,7 @@ body {
 
 #group7 {
     font-size: 2rem;
-    border: 1px solid #606060;
+    border: 1px solid #25745a;
     border-radius: 5%;
     cursor: pointer;
     overflow: scroll;
@@ -106,7 +127,7 @@ body {
 
 #group8 {
     font-size: 2rem;
-    border: 1px solid #606060;
+    border: 1px solid #25745a;
     border-radius: 5%;
     cursor: pointer;
     overflow: scroll;
@@ -114,7 +135,7 @@ body {
 
 #group9 {
     font-size: 2rem;
-    border: 1px solid #606060;
+    border: 1px solid #25745a;
     border-radius: 5%;
     cursor: pointer;
     overflow: scroll;
@@ -126,7 +147,8 @@ body {
 	grid-template-columns: repeat(3, 32vw);
 	grid-template-rows: repeat(3, 18vw);
 	padding: 1rem;
-}
+/*	margin: 2rem;
+*/}
 
 *
 {
@@ -135,43 +157,50 @@ body {
 }
 
 #cube .front {
-	transform: translateZ(100px);
+	transform: translateZ(100em);
 }
 
 #cube .back {
-	transform: rotateX(-180deg) translateZ(100px);
+	transform: rotateX(-180deg) translateZ(100em);
 }
 
 #cube .right {
-	transform:rotateY(90deg) translateZ(100px);
+	transform:rotateY(90deg) translateZ(100em);
 }
 
 #cube .left {
-	transform:rotateY(-90deg) translateZ(100px);
+	transform:rotateY(-90deg) translateZ(100em);
 }
 
 #cube .top {
-	transform:rotateX(90deg) translateZ(100px);
+	transform:rotateX(90deg) translateZ(100em);
 }
 
 #cube .bottom {
-	transform:rotateX(-90deg) translateZ(100px);
+	transform:rotateX(-90deg) translateZ(100em);
 }
 
 .container2 {
-	width: 30vw;
-	height: 30vw;
-	position: sticky;
+	/*width: 30vw;
+	height: 30vw;*/
+	width: 100%;
+	height: 100%;
+/*	padding: 10rem;
+
+*/	position: sticky;
 	left: 0;
-	perspective: 1000px;
-	perspective-origin: 50% 100%;
+	margin-top: 50%;
+	margin-left: 50%;
+	transform: translate(-35%, -50%);
+/*	perspective: 1000px;
+*/	perspective-origin: 50% 100%;
 	z-index:10;
 }
 
 #cube {
 	display: block;
-	width: 100%;
-	height: 100%;
+	width: 50%;
+	height: 50%;
 	justify-content: center;
 	align-items: center;
 	margin: auto;
@@ -184,142 +213,235 @@ body {
 }
 
 #cube div {
+	font-size: 0.5px;
 	background: coral;
 	display: block;
 	position: absolute;
-	width: 200px;
-	height: 100px;
+	width: 200em;
+	height: 100em;
 	border: 2px solid coral;
-	padding: 50px 0;
+	padding: 50em 0;
 }
 
 .dot {
 	display: block;
 	position: absolute;
-	width: 30px;
-	height: 30px;
+	width: 30em;
+	height: 30em;
 	background: #fff;
-	border-radius: 15px;
+	border-radius: 15em;
 }
 
 .front .dot1 {
-	top: 85px;
-	left: 85px;
+	top: 85em;
+	left: 85em;
 }
 
 .back .dot1 {
-	top: 45px;
-	left: 45px;
+	top: 45em;
+	left: 45em;
 }
 
 .back .dot2 {
-	top: 125px;
-	left: 125px;
+	top: 125em;
+	left: 125em;
 }
 
 .right .dot1 {
-	top: 45px;
-	left: 45px;
+	top: 45em;
+	left: 45em;
 }
 
 .right .dot2 {
-	top: 85px;
-	left: 85px;
+	top: 85em;
+	left: 85em;
 }
 
 .right .dot3 {
-	top: 125px;
-	left: 125px;
+	top: 125em;
+	left: 125em;
 }
 
 .left .dot1 {
-	top: 45px;
-	left: 45px;
+	top: 45em;
+	left: 45em;
 }
 
 .left .dot2 {
-	top: 45px;
-	left: 125px;
+	top: 45em;
+	left: 125em;
 }
 
 .left .dot3 {
-	top: 125px;
-	left: 45px;
+	top: 125em;
+	left: 45em;
 }
 
 .left .dot4 {
-	top: 125px;
-	left: 125px;
+	top: 125em;
+	left: 125em;
 }
 
 .top .dot1 {
-	top: 45px;
-	left: 45px;
+	top: 45em;
+	left: 45em;
 }
 
 .top .dot2 {
-	top: 45px;
-	left: 125px;
+	top: 45em;
+	left: 125em;
 }
 
 .top .dot3 {
-	top: 85px;
-	left: 85px;
+	top: 85em;
+	left: 85em;
 }
 
 .top .dot4 {
-	top: 125px;
-	left: 45px;
+	top: 125em;
+	left: 45em;
 }
 
 .top .dot5 {
-	top: 125px;
-	left: 125px;
+	top: 125em;
+	left: 125em;
 }
 
 .bottom .dot1 {
-	top: 45px;
-	left: 45px;
+	top: 45em;
+	left: 45em;
 }
 
 .bottom .dot2 {
-	top: 45px;
-	left: 85px;
+	top: 45em;
+	left: 85em;
 }
 
 .bottom .dot3 {
-	top: 45px;
-	left: 125px;
+	top: 45em;
+	left: 125em;
 }
 
 .bottom .dot4 {
-	top: 125px;
-	left: 45px;
+	top: 125em;
+	left: 45em;
 }
 
 .bottom .dot5 {
-	top: 125px;
-	left: 85px;
+	top: 125em;
+	left: 85em;
 }
 
 .bottom .dot6 {
-	top: 125px;
-	left: 125px;
+	top: 125em;
+	left: 125em;
 }
 
 #container3 {
-	padding: 2rem;
+	box-sizing: border-box;
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
 }
 
 #container3 button {
+	border: 1px solid #25745a;
+	color: #25745a;
+	background-color: #f6e2bb;
 	position: relative;
-	margin-left: 30%;	
 	padding: 1rem;
 	font-size: 1.5rem;
 	justify-content: center;
 }
 
 #container3 h1 {
+	padding: 0;
+	color: #25745a;
 	font-size: 1.5rem;
 	text-align: center;
+}
+
+details > summary {
+	color: #25745a;
+  	padding: 0.5rem;
+  	background-color:  #f6e2bb;
+  	border: 0.1rem solid #25745a;
+  	cursor: pointer;
+}
+
+
+@media (max-width: 812px) {
+	#body {
+		padding: 1rem;
+	}
+
+	.container {
+		display: grid;
+		grid-template-columns: repeat(1, 90vw);
+		grid-template-rows: repeat(7, 100vw);
+	}
+
+	#group 1{
+
+	}
+
+	#group4 {
+		border:none;
+		position: absolute;
+		top: 60vw;
+		left: -20vw;
+		width: 120vw;
+		height: 100vw;
+	}
+
+
+	#group7 {
+		border: none;
+		position: absolute;
+		top: 40vw;
+		right: 0vw;
+		width: 50vw;
+		height: 100vw;
+		z-index:30;
+	}
+
+	#group2 {
+		z-index:40;
+	}
+
+	.container2 {
+	margin-top: 50%;
+	margin-left: 50%;
+	transform: translate(-50%, -50%);
+}
+
+	#container3 button {
+	position: absolute;
+	float: right;
+	right: 2rem;
+	top: 7rem;
+}
+
+	#container3 h1 {
+	position: absolute;
+	float: right;
+	right: 2rem;
+	color: #25745a;
+	font-size: 1rem;
+}
+
+	h1 {
+		font-size: 2rem;
+		padding: 0.5rem;
+	}
+	h2 {
+		font-size: 2rem;
+	}
+	p {
+		font-size: 1rem;
+		padding: 1rem;
+	}
 }
