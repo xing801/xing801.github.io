@@ -35,7 +35,7 @@ body {
 /*    border: 1px solid  #25745a;
 */  border-radius: 5%;
     cursor: pointer;
-    /*overflow: scroll;*/
+    overflow: scroll;
    /* padding: 2rem;*/
 }
 
@@ -132,6 +132,10 @@ img {
     border-radius: 5%;
     cursor: pointer;
     overflow: scroll;
+}
+
+.big img{
+	background-size: cover;
 }
 
 .container {
