@@ -408,10 +408,10 @@ details > summary {
 	#group4 {
 		border:none;
 		position: absolute;
-		top: 60vw;
+		top: 40vw;
 		left: -20vw;
 		width: 120vw;
-		height: 100vw;
+		height: 75vw;
 	}
 
 
@@ -427,18 +427,19 @@ details > summary {
 
 	#group2 {
 		z-index:40;
+
 	}
 
 	.big img {
 		display: none;
 	}
 
-
 	.container2 {
 	margin-top: 50%;
 	margin-left: 50%;
-	transform: translate(-50%, -45%);
-}
+	transform: translate(-50%, -40%);
+/*	z-index: 40;
+*/}
 
 	#container3 button {
 	padding: 0.5rem;
@@ -477,4 +478,5 @@ details > summary {
 	img {
 		padding: 0.5rem;
 	}
+
 }
