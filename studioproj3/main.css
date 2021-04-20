@@ -1,7 +1,11 @@
+@font-face {
+  font-family:brandon;
+  src:url(brandon.otf)
+}
 
 body {
 	background-color:  #f6e2bb;
-    font-family: Arial;
+    font-family: brandon;
     padding: 2rem;
 }
 
@@ -14,88 +18,77 @@ body {
 	grid-template-columns: repeat(12, 10rem);
 }*/
 
-
 #group1 img {
-	padding: 1rem;
-	width: 100%;
-	height: auto;
-	/*display: none;*/
+	padding: 0.1rem;
+	width: 30%;
+	height: 150px;
 }
 
-#group1 p {
-	padding: 1rem;
-	/*display: none;*/
+#group1 h2 {
+	font-family: futura;
+	line-height: -1rem;
+	padding-bottom: 1rem;
 }
 
 #group1 {
-    border: 1px solid  #25745a;
-    border-radius: 5%;
+/*    border: 1px solid  #25745a;
+*/  border-radius: 5%;
     cursor: pointer;
     overflow: scroll;
-    padding: 2rem;
+   /* padding: 2rem;*/
 }
 
-#group1 h2, h3{
-	padding: 1rem;
-/*	border: 1px solid black;*/
-	border-radius: 10%;
-	margin: auto;
+#group1 p {
+	align-items: center;
 }
 
-/*#tagOne {
-	padding: 1rem;
-	border: 1px solid black;
-	border-radius: 10%;
-	width: 15rem;
-	float: right;
-}*/
 
 h1 {
 	color: #25745a;
 	font-size: 3rem;
-	padding-left: 1rem;
+	padding: 1rem;
 }
 
 h3 {
 	color: #25745a;
 	font-size: 2rem;
+	padding: 1rem;
 }
 
 h2 {
 	color: #25745a;
-	font-size: 2rem;
+	font-size: 2.5rem;
 }
 p {
 	color: #25745a;
-	font-size: 1rem;
+	font-size: 1.5rem;
 	padding: 1rem;
 }
 
 img {
-	width: 80%;
+	width: 100%;
 	height: auto;
-	padding: 1rem;
 }
 
 #group2 {
     font-size: 2rem;
-    border: 1px solid #25745a;
-    border-radius: 5%;
+/*    border: 1px solid #25745a;
+*/    border-radius: 5%;
     cursor: pointer;
     overflow: scroll;
 }
 
 #group3 {
     font-size: 2rem;
-    border: 1px solid #25745a;
-    border-radius: 5%;
+/*    border: 1px solid #25745a;
+*/    border-radius: 5%;
     cursor: pointer;
     overflow: scroll; 
 }
 
 #group4 {
     font-size: 2rem;
-    border: 1px solid #25745a;
+    border: 1px solid  #f0ce8e;
     border-radius: 5%;
     cursor: pointer;
     overflow: scroll;
@@ -103,7 +96,7 @@ img {
 
 #group5 {
     font-size: 2rem;
-    border: 1px solid #25745a;
+    /*border: 1px solid #25745a;*/
     border-radius: 5%;
     cursor: pointer;
     overflow: scroll;
@@ -111,7 +104,7 @@ img {
 
 #group6 {
     font-size: 2rem;
-    border: 1px solid #25745a;
+    /*border: 1px solid #25745a;*/
     border-radius: 5%;
     cursor: pointer;
     overflow: scroll;
@@ -119,7 +112,7 @@ img {
 
 #group7 {
     font-size: 2rem;
-    border: 1px solid #25745a;
+    border: 1px solid  #f0ce8e;
     border-radius: 5%;
     cursor: pointer;
     overflow: scroll;
@@ -127,7 +120,7 @@ img {
 
 #group8 {
     font-size: 2rem;
-    border: 1px solid #25745a;
+    /*border: 1px solid #25745a;*/
     border-radius: 5%;
     cursor: pointer;
     overflow: scroll;
@@ -135,7 +128,7 @@ img {
 
 #group9 {
     font-size: 2rem;
-    border: 1px solid #25745a;
+    /*border: 1px solid #25745a;*/
     border-radius: 5%;
     cursor: pointer;
     overflow: scroll;
@@ -147,8 +140,8 @@ img {
 	grid-template-columns: repeat(3, 32vw);
 	grid-template-rows: repeat(3, 18vw);
 	padding: 1rem;
-/*	margin: 2rem;
-*/}
+	grid-gap: 1rem;
+}
 
 *
 {
@@ -214,12 +207,12 @@ img {
 
 #cube div {
 	font-size: 0.5px;
-	background: coral;
+	background:  #f0ce8e;
 	display: block;
 	position: absolute;
 	width: 200em;
 	height: 100em;
-	border: 2px solid coral;
+	border: 2px solid #25745a;
 	padding: 50em 0;
 }
 
@@ -348,9 +341,10 @@ img {
 }
 
 #container3 button {
-	border: 1px solid #25745a;
+	border: 1px solid  #f0ce8e;
 	color: #25745a;
-	background-color: #f6e2bb;
+	background-color:  #f0ce8e
+;
 	position: relative;
 	padding: 1rem;
 	font-size: 1.5rem;
@@ -368,12 +362,18 @@ details > summary {
 	color: #25745a;
   	padding: 0.5rem;
   	background-color:  #f6e2bb;
-  	border: 0.1rem solid #25745a;
+  	border: 0.1rem solid  #f0ce8e
+;
   	cursor: pointer;
 }
 
+@media (min-width: 768px) {
+	.small img {
+		display: none;
+	}
+}
 
-@media (max-width: 812px) {
+@media (max-width:767px) {
 	#body {
 		padding: 1rem;
 	}
@@ -384,8 +384,25 @@ details > summary {
 		grid-template-rows: repeat(7, 100vw);
 	}
 
-	#group 1{
+	#group1 {
+		height: 50vw;
+		border: 1px solid #f0ce8e;
+		padding: 0.5rem;
+	}
 
+	#group1 img{
+		height: 100px;
+		padding: 0.2rem;
+	}
+
+	#group1 h2 {
+		font-size: 1.5rem;
+		text-align: center;
+	}
+
+	#group1 p {
+		text-align: left;
+		font-size: 0.8rem;
 	}
 
 	#group4 {
@@ -412,17 +429,23 @@ details > summary {
 		z-index:40;
 	}
 
+	.big img {
+		display: none;
+	}
+
+
 	.container2 {
 	margin-top: 50%;
 	margin-left: 50%;
-	transform: translate(-50%, -50%);
+	transform: translate(-50%, -45%);
 }
 
 	#container3 button {
+	padding: 0.5rem;
 	position: absolute;
 	float: right;
 	right: 2rem;
-	top: 7rem;
+	top: 8.5rem;
 }
 
 	#container3 h1 {
@@ -431,17 +454,27 @@ details > summary {
 	right: 2rem;
 	color: #25745a;
 	font-size: 1rem;
+	top: 12rem;
 }
 
 	h1 {
 		font-size: 2rem;
 		padding: 0.5rem;
 	}
+
 	h2 {
 		font-size: 2rem;
 	}
+	h3 {
+		font-size: 1.5rem;
+		padding: 0.5rem;
+	}
 	p {
 		font-size: 1rem;
-		padding: 1rem;
+		padding: 0.5rem;
+	}
+
+	img {
+		padding: 0.5rem;
 	}
 }
