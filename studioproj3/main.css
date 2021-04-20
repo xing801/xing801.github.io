@@ -439,6 +439,7 @@ details > summary {
 	margin-left: 50%;
 	transform: translate(-50%, -40%);
 	z-index: 30;
+	overflow: visible;
 }
 
 	#container3 button {
