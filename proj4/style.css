@@ -479,12 +479,12 @@ h1 {
 }
 
 .quote {
-	font-size: 1.2rem;
+	font-size: 1rem;
 	color: #ffffe6;
 	font-family: futura;
 	justify-content: center;
-	width: 60vw;
-}
+/*	width: 60vw;
+*/}
 
 .btn-large {
 	margin: 0.5em;
@@ -493,9 +493,10 @@ h1 {
 
 .card {
 	text-align: center;
-	width: 45em;
+	width: 50%;
 	padding: 1rem;
-	left: 50%;
+	left: 20%;
+	position: absolute;
 }
 
 .new-quote-button {
@@ -512,8 +513,8 @@ h1 {
 	justify-content: center;
 	color: #7575a3;
 	position: relative;
+	margin: auto;
 	left: 32%;
-	top: 0rem;
 }
 
 .container {
